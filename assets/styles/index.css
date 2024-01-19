@@ -1,0 +1,179 @@
+:root {
+    --nest-blue: #31bbda;
+    --nest-white: #fff;
+    --nest-green: #86c654;
+    --nest-blue-dark: #141a67;
+    --nest-red: #d85247;
+    --nest-off-white: ##fff6e9;
+}
+ p{
+    margin: 0;
+ }
+@font-face {
+    font-family: 'woodforbourne';
+    src: url('assets/fonts/WoodfordBournePRO-Bold.otf') format('otf'),
+         url('assets/fonts/WoodfordBournePRO-BoldItalic') format('otf'),
+         url('assets/fonts/WoodfordBournePRO-Regular.otf') format('otf'),
+         url('assets/fonts/WoodfordBournePRO-Thin.otf') format('otf'),
+         url('assets/fonts/WoodfordBournePRO-ThinItalic.otf') format('otf'),
+         url('assets/fonts/WoodfordBournePRO-Italic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-shadow {
+    box-shadow: 0 0 5px #777;
+}
+
+.main-background-section {
+    min-height: 600px;
+    background-color: var(--nest-blue);
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.font-gv{
+    font-family: "Great Vibes", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-gv-light{
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 52px;
+}
+
+.font-60{
+    font-size: 60px;
+}
+
+.home-page-welcome-section,
+.home-page-philosophy-section-container{
+    padding: 2em;
+}
+.home-page-philosophy-section{
+    background: var(--nest-blue-dark);
+}
+
+.header-welcome-row{
+    padding: 2em;
+    background: var(--nest-white);
+    position: relative;
+    top: -80px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0px var(--nest-blue);
+}
+
+.font-woord-bourne{
+    font-family: 'woodforbourne', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.philosophy-card{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+    transition: all .3s ease-in-out;
+}
+
+.philosophy-card:hover{
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+    box-shadow: 0 0 30px 0px var(--nest-blue);
+
+}
+
+.link-card{
+    height: 100px;
+    border: 1px solid var(--nest-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.link-card:hover{
+    background-color: var(--nest-white);
+    color: var(--nest-blue-dark);
+    font-weight: 700;
+
+}
+
+.bg-curriculum{
+    background-color: var(--nest-blue-dark);
+    color: var(--nest-white);
+    padding: 2em;
+}
+
+.bg-family{
+    background-color: var(--nest-off-white);
+    padding: 2em
+}
+
+.floating-button-container{
+    position: fixed;
+    right: 50px;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-button-container a{
+    text-decoration: none;
+    background-color: #141a67;
+    padding: 10px 30px;
+    margin: 0;
+    color: var(--nest-white);
+    border-radius: 30px;
+}
+
+.animated-bg{
+    animation: growAndFade 2s infinite ease-out;
+    background-color: #141a67;
+    border-radius: 50px;
+    height: 150%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.animated-bg-2{
+    animation: growAndFade 1s infinite ease-out;
+    background-color: var(--nest-green);
+    border-radius: 50px;
+    height: 150%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+@keyframes growAndFade {
+    0% {
+        opacity: .25;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
